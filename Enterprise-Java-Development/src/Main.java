@@ -3,7 +3,7 @@ public class Main {
 
         int[] array1 = {1, 2, 3, 4, 5};
         differenceOfNumbers(array1);
-
+        findTheSmallest(array1);
     }
 
     public static void differenceOfNumbers(int[] array){
@@ -18,5 +18,15 @@ public class Main {
             }
         }
         System.out.println(largest-smallest);
+    }
+
+    public static void findTheSmallest(int[] array){
+        int smallest = array[0];
+        for (int i=0; i<array.length; i++){
+            if (smallest>array[i]){
+                smallest = array[i];
+            }
+        }
+        System.out.println(smallest);
     }
 }
